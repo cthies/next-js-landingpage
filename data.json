@@ -1,0 +1,75 @@
+{
+    "title": "Your landingpage",
+    "posts": [
+        {
+            "id": 1,
+            "title": "Post 1",
+            "content": "This is the full content of post 1",
+            "url": "/1",
+            "features": ["ListItem",  "ListItem",  "ListItem"]
+        },
+        {
+            "id": 2,
+            "title": "Post 2",
+            "content": "This is the full content of post 2",
+            "url": "/2",
+            "features": ["ListItem", "ListItem"]
+        },
+        {
+            "id": 3,
+            "title": "Post 3",
+            "content": "This is the full content of post 3",
+            "url": "/3",
+            "features": ["ListItem", "ListItem"]
+        },
+        {
+            "id": 4,
+            "title": "Post 4",
+            "content": "This is the full content of post 4",
+            "url": "/4",
+            "features": ["ListItem", "ListItem"]
+        }
+    ],
+    "slides": [
+        {
+            "id": 1,
+            "imageSrc": "https://fastly.picsum.photos/id/19/2500/1667.jpg?hmac=7epGozH4QjToGaBf_xb2HbFTXoV5o8n_cYzB7I4lt6g",
+            "title": "Slide1",
+            "description": "Lorem ipsum dolor sit amet, consectur dolori",
+            "pricingText": "Pricing",
+            "features": ["ListItem", "ListItem", "ListItem"],
+            "buttonLabel": "See details",
+            "url": "#"
+        },
+        {
+            "id": 2,
+            "imageSrc": "https://fastly.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68",
+            "title": "Slide2",
+            "description": "Lorem ipsum dolor sit amet, consectur dolori",
+            "pricingText": "Pricing",
+            "features": ["ListItem", "ListItem"],
+            "buttonLabel": "See details",
+            "url": "#"
+          },
+          {
+            "id": 3,
+            "imageSrc": "https://fastly.picsum.photos/id/18/2500/1667.jpg?hmac=JR0Z_jRs9rssQHZJ4b7xKF82kOj8-4Ackq75D_9Wmz8",
+            "title": "Slide3",
+            "description": "Lorem ipsum dolor sit amet, consectur dolori",
+            "pricingText": "Pricing",
+            "features": ["ListItem", "ListItem", "ListItem"],
+            "buttonLabel": "See details",
+            "url": "#"
+          },
+          {
+            "id": 4,
+            "imageSrc": "https://fastly.picsum.photos/id/27/3264/1836.jpg?hmac=p3BVIgKKQpHhfGRRCbsi2MCAzw8mWBCayBsKxxtWO8g",
+            "title": "Slide4",
+            "description": "Lorem ipsum dolor sit amet, consectur dolori",
+            "pricingText": "Pricing",
+            "features": ["ListItem", "ListItem"],
+            "buttonLabel": "See details",
+            "url": "#"
+            }
+      ]
+}

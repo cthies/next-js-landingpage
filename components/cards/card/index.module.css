@@ -1,0 +1,64 @@
+.card {
+  padding: 1rem 2.5rem;
+  margin-bottom: 15px;
+  border-radius: var(--border-radius);
+  background: rgba(var(--card-rgb), .2);
+  border: 1px solid rgba(var(--card-border-rgb), .6);
+  transition: background 200ms, border 200ms;
+  display: flex;
+ flex-flow: row wrap;
+ justify-content: flex-start;
+}
+
+.card span {
+  display: inline-block;
+  transition: transform 200ms;
+}
+
+.card h2 {
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.card p {
+  margin: 0;
+  opacity: 0.6;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 30ch;
+}
+
+.card ol {
+  margin-top: auto;
+  list-style-position: inside;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    background: rgba(var(--card-rgb), 0.4);
+    border: 1px solid rgba(var(--card-border-rgb), 1);
+  }
+
+  .card:hover span {
+    transform: translateX(4px);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .card:hover span {
+    transform: none;
+  }
+}
+
+@media (min-width: 701px) {
+  .card:not(:nth-child(2n-1)) {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 980px) {
+  .card:not(:first-child) {
+    margin-left: 30px;
+  }
+}

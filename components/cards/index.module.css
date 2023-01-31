@@ -1,0 +1,21 @@
+.grid {
+  grid-template-columns: 1fr;
+  display: grid;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 980px) {
+  .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (min-width: 980px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(25%, auto));
+    max-width: 100%;
+  }
+}
