@@ -1,5 +1,6 @@
 import styles from './index.module.css';
 import Link from 'next/link';
+import Checklist from '@/components/checklist';
 
 const Card = (post: any) => {
     return (
@@ -10,11 +11,12 @@ const Card = (post: any) => {
             rel="noopener noreferrer"
         >
             <h2>
-                {post.title} <span>&#10140;</span>
+                {post.title} <span className={styles.arrow}>&#10140;</span>
             </h2>
             <p>
                 {post.content}
             </p>
+            
             <ol>
                 {post.features.map((feature: any, index: any) => {
                     return (

@@ -1,0 +1,28 @@
+.checklist {
+  list-style: none;
+}
+
+.checklist li {
+  position: relative;
+  margin-top: 0;
+  padding-left: 25px;
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.checklist li::before {
+  content: '';
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA3OC4zNjkgNzguMzY5IiBoZWlnaHQ9Ijc4LjM2OSIgdmlld0JveD0iMCAwIDc4LjM2OSA3OC4zNjkiIHdpZHRoPSI3OC4zNjkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTc4LjA0OSAxOS4wMTUtNDguNTkxIDQ4LjU5MWMtLjQyOC40MjgtMS4xMjEuNDI4LTEuNTQ4IDBsLTI3LjU5LTI3LjU5MWMtLjQyNy0uNDI2LS40MjctMS4xMTkgMC0xLjU0N2w2LjcwNC02LjcwNGMuNDI4LS40MjcgMS4xMjEtLjQyNyAxLjU0OCAwbDIwLjExMyAyMC4xMTIgNDEuMTEzLTQxLjExM2MuNDI5LS40MjcgMS4xMi0uNDI3IDEuNTQ4IDBsNi43MDMgNi43MDRjLjQyOC40MjcuNDI4IDEuMTE5IDAgMS41NDh6IiBmaWxsPSIjMmUyZjJmIi8+PC9zdmc+);
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+.bright li::before {
+  filter: invert(1);
+}

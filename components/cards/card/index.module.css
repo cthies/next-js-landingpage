@@ -40,13 +40,13 @@
     border: 1px solid rgba(var(--card-border-rgb), 1);
   }
 
-  .card:hover span {
+  .card:hover .arrow {
     transform: translateX(4px);
   }
 }
 
 @media (prefers-reduced-motion) {
-  .card:hover span {
+  .card:hover .arrow {
     transform: none;
   }
 }
