@@ -13,19 +13,11 @@ const Card = (post: any) => {
             <h2>
                 {post.title} <span className={styles.arrow}>&#10140;</span>
             </h2>
-            <p>
+            <p className='margin-default-bottom'>
                 {post.content}
             </p>
             
-            <ol>
-                {post.features.map((feature: any, index: any) => {
-                    return (
-                        <li key={index}>
-                            <span>{feature}</span>
-                        </li>
-                    );
-                })}
-            </ol>
+            <Checklist slide={post} theme='bright' align='left'></Checklist>
         </Link>
     )
 }

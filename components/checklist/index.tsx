@@ -1,9 +1,9 @@
 import styles from './index.module.css';
 
-const Checklist = (slide: any) => {
+const Checklist = (props: any) => {
     return (
-        <ul className={`margin-l-bottom ${styles.checklist}`}>
-            {slide.features.map((name: any, index: any) => (
+        <ul className={`${props.className} ${styles[props.theme]} ${styles[props.align]} ${styles.checklist}`}>
+            {props.slide.features.map((name: any, index: any) => (
                 <li key={index}>{name}</li>
             ))}
         </ul>

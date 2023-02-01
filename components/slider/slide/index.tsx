@@ -16,7 +16,7 @@ const Slide = (slide: any) => {
             <div className={styles.content}>
                 <h2 className='margin-l-bottom'>{slide.title}</h2>
                 <p className='margin-l-bottom'>{slide.description}</p>
-                <Checklist {...slide}></Checklist>
+                <Checklist slide={slide} theme='dark' className='margin-l-bottom'></Checklist>
                 <Link href={slide.url} className='btn'>{slide.buttonLabel}</Link>
             </div>
         </div>

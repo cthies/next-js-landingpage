@@ -6,8 +6,8 @@
   border: 1px solid rgba(var(--card-border-rgb), .6);
   transition: background 200ms, border 200ms;
   display: flex;
- flex-flow: row wrap;
- justify-content: flex-start;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
 .card span {
@@ -21,16 +21,8 @@
 }
 
 .card p {
-  margin: 0;
-  opacity: 0.6;
   font-size: 0.9rem;
   line-height: 1.5;
-  max-width: 30ch;
-}
-
-.card ol {
-  margin-top: auto;
-  list-style-position: inside;
 }
 
 /* Enable hover only on non-touch devices */
