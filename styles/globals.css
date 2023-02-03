@@ -114,3 +114,16 @@ button:active,
 .margin-l-bottom {
   margin-bottom: 30px;
 }
+
+/* set sliderArrows outside slider*/
+#__next .react-multi-carousel-list {
+  position: unset;
+  border-radius: 25px;
+}
+.react-multi-carousel-list .react-multiple-carousel__arrow--right {
+  right: calc(-10% + 1px);
+}
+
+.react-multi-carousel-list .react-multiple-carousel__arrow--left {
+  left: calc(-10% + 1px);
+}

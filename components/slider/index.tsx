@@ -24,16 +24,17 @@ export default function Slider(props: any) {
     }
   };
   return (
+    <div className={styles.slider}>
+      <Carousel
+        responsive={responsive}
 
-    <Carousel
-      responsive={responsive}
-      className={styles.slider}
-    >
-      {props.content.map((slide: any, index: any) => {
-        return (
-          <Slide key={index} {...slide} />
-        );
-      })}
-    </Carousel>
+      >
+        {props.content.map((slide: any, index: any) => {
+          return (
+            <Slide key={index} {...slide} />
+          );
+        })}
+      </Carousel>
+    </div>
   )
 }
