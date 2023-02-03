@@ -68,8 +68,7 @@
             "description": "Lorem ipsum dolor sit amet, consectur dolori",
             "pricingText": "Pricing",
             "features": ["ListItem", "ListItem"],
-            "buttonLabel": "See details",
-            "url": "#"
+            "buttonLabel": "See details"
             }
       ]
 }

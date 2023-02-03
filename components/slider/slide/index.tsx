@@ -4,6 +4,10 @@ import Link from 'next/link';
 import Checklist from '@/components/checklist';
 
 const Slide = (slide: any) => {
+    let button;
+    if (slide.url) {
+        button = <Link href={slide.url} className='btn'>{slide.buttonLabel}</Link>;
+    }
     return (
         <div className={styles.slide}>
             <Image
@@ -17,7 +21,7 @@ const Slide = (slide: any) => {
                 <h2 className='margin-l-bottom'>{slide.title}</h2>
                 <p className='margin-l-bottom'>{slide.description}</p>
                 <Checklist slide={slide} theme='dark' className='margin-l-bottom'></Checklist>
-                <Link href={slide.url} className='btn'>{slide.buttonLabel}</Link>
+                {button}
             </div>
         </div>
     )
