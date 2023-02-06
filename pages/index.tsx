@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Hero from '@/components/hero'
 import Cards from '@/components/cards'
 import Slider from '@/components/slider'
+import Slide from '@/components/slider/slide'
 import styles from '@/styles/Home.module.css'
 import content from '../data.json';
 
@@ -15,25 +17,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.center}>
-          <div>
-            <Image
-              className={styles.logo}
-              src="/logo.svg"
-              alt="{content.title}"
-              width={280}
-              height={280}
-              priority
-            />
-
-            <h1>
-              {content.title}
-            </h1>
-          </div>
-        </div>
-
-        <Cards content={content.posts}/>
-        <Slider content={content.slides} />
+        
+        <Hero {...content.hero}/>
+        <Cards content={content.summary}/>
+        <Slider content={content.slider} />
+        <Slide {...content.slide1} alignImage="right" />
+        <Slide {...content.slide2} />
+        <Slide {...content.slide3} alignImage="right" />
       </main>
     </>
   )

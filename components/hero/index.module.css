@@ -1,0 +1,51 @@
+.hero {
+  margin-bottom: 60px;
+}
+
+.logo {
+  filter: invert(1);
+  width: 100%;
+  max-width: 180px;
+  max-height: 180px;
+  margin: 0 auto;
+  display: block;
+}
+
+.hero .content {
+  padding: 20px;
+}
+
+.headline {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 980px) {
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+  }
+
+  .logo {
+    max-width: 50%;
+    max-height: inherit;
+    transform: scale(1);
+    animation-name: rotate;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+  }
+
+  .hero .content {
+    width: 50%;
+    margin-right: auto;
+  }
+}
+
+@keyframes rotate {
+  from {transform: scale(1);}
+  85% {transform: scale(1);}
+  95% {transform: scale(1.1);}
+  to {transform: scale(1);}
+}

@@ -3,11 +3,18 @@
   height: 100%;
   background-color: rgba(255, 255, 255, .6);
   color: black;
+  overflow: hidden;
 }
 
 .slide img {
-  width: auto;
-  height: 240px;
+  width: 100%;
+  height: auto;
+}
+
+.imageWrapper {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .slide .content {
@@ -18,16 +25,23 @@
   .slide {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    align-items: center;
+  }
 
+  .alignRight {
+    flex-direction: row-reverse
+  }
+
+  .imageWrapper {
+    width: 50%;
   }
 
   .slide img {
     width: auto;
-    height: 330px;
+    height: 100%;
   }
 
   .slide .content {
-    width: 530px;
+    width: 50%;
   }
 }

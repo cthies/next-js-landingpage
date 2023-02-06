@@ -7,7 +7,6 @@ const Card = (post: any) => {
         <Link
             href={post.url}
             className={styles.card}
-            target="_blank"
             rel="noopener noreferrer"
         >
             <h2>

@@ -2,14 +2,21 @@ import styles from './index.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import Checklist from '@/components/checklist';
+import Button from '@/components/button';
 
 const Slide = (slide: any) => {
     let button;
     if (slide.url) {
-        button = <Link href={slide.url} className='btn'>{slide.buttonLabel}</Link>;
+        button = <Button href={slide.url} theme='primary' buttonLabel={slide.buttonLabel} />;
+    }
+
+    let style = '';
+    if (slide.alignImage && slide.alignImage === "right") {
+        style = styles.alignRight;
     }
     return (
-        <div className={styles.slide}>
+        <div className={`${style} ${styles.slide}`} id={slide.id}>
+            <div className={styles.imageWrapper}>
             <Image
                 src={slide.imageSrc}
                 alt={slide.title}
@@ -17,7 +24,9 @@ const Slide = (slide: any) => {
                 height={500}
                 loading="lazy"
             />
+            </div>
             <div className={styles.content}>
+
                 <h2 className='margin-l-bottom'>{slide.title}</h2>
                 <p className='margin-l-bottom'>{slide.description}</p>
                 <Checklist slide={slide} theme='dark' className='margin-l-bottom'></Checklist>

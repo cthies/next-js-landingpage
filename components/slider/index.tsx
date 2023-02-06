@@ -24,12 +24,12 @@ export default function Slider(props: any) {
     }
   };
   return (
-    <div className={styles.slider}>
+    <div className={`margin-xl-bottom ${styles.slider}`} id={props.content.id}>
       <Carousel
         responsive={responsive}
 
       >
-        {props.content.map((slide: any, index: any) => {
+        {props.content.slides.map((slide: any, index: any) => {
           return (
             <Slide key={index} {...slide} />
           );

@@ -2,6 +2,7 @@
   grid-template-columns: 1fr;
   display: grid;
   margin-bottom: 60px;
+  padding: 0 15px;
 }
 
 /* Tablet and Smaller Desktop */
@@ -16,5 +17,6 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(25%, auto));
     max-width: 100%;
+    padding: 0;
   }
 }
