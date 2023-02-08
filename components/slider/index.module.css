@@ -2,3 +2,22 @@
   width: 100%;
   position: relative;
 }
+
+.slider::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background-color: var(--separator-bg);
+  top: -15px;
+  right: -50%;
+  bottom: 0px;
+  left: -50%;
+  transform: skew(0, 2deg);
+}
+
+@media screen and (min-width: 980px) {
+  .slider::after {
+    top: 30px;
+    bottom: 30px;
+  }
+}

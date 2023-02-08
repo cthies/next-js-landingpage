@@ -1,5 +1,6 @@
 {
     "hero": {
+        "type": "hero",
         "title": "Your landingpage",
         "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
     },
@@ -7,28 +8,28 @@
         {
             "id": 1,
             "title": "Post 1",
-            "content": "This is the full content of post 1",
+            "content": "This is the teaser of post 1",
             "url": "#1",
             "features": ["ListItem",  "ListItem",  "ListItem"]
         },
         {
             "id": 2,
             "title": "Post 2",
-            "content": "This is the full content of post 2",
+            "content": "This is the teaser of post 2",
             "url": "#2",
             "features": ["ListItem", "ListItem"]
         },
         {
             "id": 3,
             "title": "Post 3",
-            "content": "This is the full content of post 3",
+            "content": "This is the teaser of post 3",
             "url": "#3",
             "features": ["ListItem", "ListItem"]
         },
         {
             "id": 4,
             "title": "Post 4",
-            "content": "This is the full content of post 4",
+            "content": "This is theteaser of post 4",
             "url": "#4",
             "features": ["ListItem", "ListItem"]
         }

@@ -1,9 +1,22 @@
 .hero {
+  padding: 1em 0;
   margin-bottom: 60px;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background-color: var(--highlight-bg);
+  top: 0;
+  right: -5%;
+  bottom: -22px;
+  left: -5%;
+  transform: skew(1deg, 5deg);
 }
 
 .logo {
-  filter: invert(1);
   width: 100%;
   max-width: 180px;
   max-height: 180px;
@@ -27,8 +40,16 @@
 
   }
 
+  .hero::after {
+    top: -20%;
+    right: -50%;
+    bottom: -22px;
+    left: -50%;
+    transform: skew(0, -2deg);
+  }
+
   .logo {
-    max-width: 50%;
+    max-width: 360px;
     max-height: inherit;
     transform: scale(1);
     animation-name: rotate;
@@ -44,8 +65,19 @@
 }
 
 @keyframes rotate {
-  from {transform: scale(1);}
-  85% {transform: scale(1);}
-  95% {transform: scale(1.1);}
-  to {transform: scale(1);}
+  from {
+    transform: scale(1);
+  }
+
+  85% {
+    transform: scale(1);
+  }
+
+  95% {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
 }
