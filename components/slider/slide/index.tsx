@@ -11,7 +11,7 @@ const Slide = (slide: any) => {
     }
 
     let style = '';
-    if (slide.alignImage && slide.alignImage === "right") {
+    if (slide.align && slide.align === "right") {
         style = styles.alignRight;
     }
     return (

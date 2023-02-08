@@ -1,10 +1,13 @@
-{
-    "hero": {
+{"content": [
+    {
         "type": "hero",
         "title": "Your landingpage",
         "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
     },
-    "summary": [
+    {
+        "type": "summary",
+        "cards": [
+        
         {
             "id": 1,
             "title": "Post 1",
@@ -33,8 +36,9 @@
             "url": "#4",
             "features": ["ListItem", "ListItem"]
         }
-    ],
-    "slider": {
+    ]},
+     {
+        "type": "slider",
         "id": "1",
         "slides": [
             {
@@ -73,15 +77,18 @@
             }
         ]
     },
-    "slide1": {
+     {
+        "type": "slide",
         "id": 2,
         "imageSrc": "https://fastly.picsum.photos/id/33/5000/3333.jpg?hmac=h5NVRcUXmsWm612YQOroHSA5n9R7gxZgoP60LHBPHtw",
         "title": "Slide1",
         "description": "Lorem ipsum dolor sit amet, consectur dolori",
         "pricingText": "Pricing",
-        "features": ["ListItem", "ListItem", "ListItem"]
+        "features": ["ListItem", "ListItem", "ListItem"],
+        "align": "right"
     },
-    "slide2": {
+    {
+        "type": "slide",
         "id": 3,
         "imageSrc": "https://fastly.picsum.photos/id/34/3872/2592.jpg?hmac=4o5QGDd7eVRX8_ISsc5ZzGrHsFYDoanmcsz7kyu8A9A",
         "title": "Slide1",
@@ -89,12 +96,14 @@
         "pricingText": "Pricing",
         "features": ["ListItem", "ListItem", "ListItem"]
     },
-    "slide3": {
+     {
+        "type": "slide",
         "id": 4,
         "imageSrc": "https://fastly.picsum.photos/id/33/5000/3333.jpg?hmac=h5NVRcUXmsWm612YQOroHSA5n9R7gxZgoP60LHBPHtw",
         "title": "Slide1",
         "description": "Lorem ipsum dolor sit amet, consectur dolori",
         "pricingText": "Pricing",
-        "features": ["ListItem", "ListItem", "ListItem"]
+        "features": ["ListItem", "ListItem", "ListItem"],
+        "align": "right"
     }
-}
+    ]}

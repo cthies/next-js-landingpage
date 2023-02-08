@@ -1,10 +1,10 @@
 import Card from '@/components/cards/card';
 import styles from './index.module.css';
 
-export default function Cards(props: any) {
+export default function Cards(content: any) {
   return (
     <div className={styles.grid}>
-      {props.content.map((post: any, index: any) => {
+      {content.cards.map((post: any, index: any) => {
         return (
           <Card key={index} {...post} />
         );

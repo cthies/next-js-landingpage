@@ -17,13 +17,38 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+
+      {content.content.map((slide: any, index: any) => {
+
+        if(slide.type == 'hero') {
+          return (
+            <Hero {...slide}/>
+          );
+        }
+
+        if(slide.type == 'summary') {
+          return (
+            <Cards {...slide}/>
+          );
+        }
+
+        if(slide.type == 'slider') {
+          return (
+            <Slider content={slide} />
+          );
+        }
+
+        if(slide.type == 'slide') {
+          return (
+            <Slide {...slide} />
+          );
+        }
+
+      
+         
+      })}
         
-        <Hero {...content.hero}/>
-        <Cards content={content.summary}/>
-        <Slider content={content.slider} />
-        <Slide {...content.slide1} alignImage="right" />
-        <Slide {...content.slide2} />
-        <Slide {...content.slide3} alignImage="right" />
+        
       </main>
     </>
   )
