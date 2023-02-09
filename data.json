@@ -63,7 +63,6 @@
                 "title": "Slide3",
                 "description": "Lorem ipsum dolor sit amet, consectur dolori",
                 "pricingText": "Pricing",
-                "features": ["ListItem", "ListItem", "ListItem"],
                 "buttonLabel": "See details",
                 "url": "#"
             },

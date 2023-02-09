@@ -31,7 +31,7 @@ export default function Slider(props: any) {
       >
         {props.content.slides.map((slide: any, index: any) => {
           return (
-            <Slide key={index} {...slide} />
+            <Slide key={index} slide={slide} theme="dark" />
           );
         })}
       </Carousel>

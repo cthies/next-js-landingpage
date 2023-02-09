@@ -2,6 +2,7 @@
   padding: 1em 0;
   margin-bottom: 60px;
   position: relative;
+  color: var(--background);
 }
 
 .hero::after {
@@ -9,7 +10,7 @@
   position: absolute;
   z-index: -1;
   background-color: var(--highlight-bg);
-  top: 0;
+  top: 50px;
   right: -5%;
   bottom: -22px;
   left: -5%;

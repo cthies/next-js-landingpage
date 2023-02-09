@@ -16,7 +16,7 @@ const Card = (post: any) => {
                 {post.content}
             </p>
             
-            <Checklist slide={post} theme='bright|dark' align='left'></Checklist>
+            <Checklist slide={post} theme='bright' align='left'></Checklist>
         </Link>
     )
 }

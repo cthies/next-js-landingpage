@@ -40,7 +40,7 @@ export default function Home() {
 
         if(slide.type == 'slide') {
           return (
-            <Slide {...slide} />
+            <Slide slide={slide} />
           );
         }
 

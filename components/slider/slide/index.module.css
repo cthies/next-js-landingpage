@@ -1,8 +1,10 @@
 .slide {
   width: 100%;
   height: 100%;
-  color: black;
-  overflow: hidden;
+}
+
+.slide.dark {
+  color: var(--background);
 }
 
 .slide img {
@@ -14,7 +16,6 @@
 }
 
 .imageWrapper {
-  overflow: hidden;
   display: flex;
   justify-content: center;
 }
