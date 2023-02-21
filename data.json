@@ -1,8 +1,12 @@
 {"content": [
     {
         "type": "hero",
-        "title": "Your landingpage",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+        "badge": "Highlight",
+        "title": "Discover our landingpage",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
+        "buttonLabel": "See details",
+        "url": "#",
+        "image": "src/icons/annual-assessment-svgrepo-com.svg"
     },
     {
         "type": "summary",
@@ -43,7 +47,7 @@
         "slides": [
             {
                 "id": 1,
-                "imageSrc": "https://fastly.picsum.photos/id/19/2500/1667.jpg?hmac=7epGozH4QjToGaBf_xb2HbFTXoV5o8n_cYzB7I4lt6g",
+                "imageSrc": "src/icons/forensic-member-services-svgrepo-com.svg",
                 "title": "Slide1",
                 "description": "Lorem ipsum dolor sit amet, consectur dolori",
                 "pricingText": "Pricing",
@@ -51,7 +55,7 @@
             },
             {
                 "id": 2,
-                "imageSrc": "https://fastly.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68",
+                "imageSrc": "src/icons/legal-service-svgrepo-com.svg",
                 "title": "Slide2",
                 "description": "Lorem ipsum dolor sit amet, consectur dolori",
                 "pricingText": "Pricing",
@@ -59,7 +63,7 @@
             },
             {
                 "id": 3,
-                "imageSrc": "https://fastly.picsum.photos/id/18/2500/1667.jpg?hmac=JR0Z_jRs9rssQHZJ4b7xKF82kOj8-4Ackq75D_9Wmz8",
+                "imageSrc": "src/icons/community-corrections-bureau-svgrepo-com.svg",
                 "title": "Slide3",
                 "description": "Lorem ipsum dolor sit amet, consectur dolori",
                 "pricingText": "Pricing",
@@ -68,7 +72,7 @@
             },
             {
                 "id": 4,
-                "imageSrc": "https://fastly.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68",
+                "imageSrc": "src/icons/forensic-member-services-svgrepo-com.svg",
                 "title": "Slide4",
                 "description": "Lorem ipsum dolor sit amet, consectur dolori",
                 "pricingText": "Pricing",
@@ -79,7 +83,7 @@
      {
         "type": "slide",
         "id": 2,
-        "imageSrc": "https://fastly.picsum.photos/id/33/5000/3333.jpg?hmac=h5NVRcUXmsWm612YQOroHSA5n9R7gxZgoP60LHBPHtw",
+        "imageSrc": "src/icons/remote-teaching-svgrepo-com.svg",
         "title": "Slide1",
         "description": "Lorem ipsum dolor sit amet, consectur dolori",
         "pricingText": "Pricing",
@@ -89,7 +93,7 @@
     {
         "type": "slide",
         "id": 3,
-        "imageSrc": "https://fastly.picsum.photos/id/34/3872/2592.jpg?hmac=4o5QGDd7eVRX8_ISsc5ZzGrHsFYDoanmcsz7kyu8A9A",
+        "imageSrc": "src/icons/industry-association-svgrepo-com.svg",
         "title": "Slide1",
         "description": "Lorem ipsum dolor sit amet, consectur dolori",
         "pricingText": "Pricing",
@@ -98,7 +102,7 @@
      {
         "type": "slide",
         "id": 4,
-        "imageSrc": "https://fastly.picsum.photos/id/33/5000/3333.jpg?hmac=h5NVRcUXmsWm612YQOroHSA5n9R7gxZgoP60LHBPHtw",
+        "imageSrc": "src/icons/drug-management-svgrepo-com.svg",
         "title": "Slide1",
         "description": "Lorem ipsum dolor sit amet, consectur dolori",
         "pricingText": "Pricing",

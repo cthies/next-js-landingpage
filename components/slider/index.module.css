@@ -1,6 +1,7 @@
 .slider {
   width: 100%;
   position: relative;
+  color: var(--foreground);
 }
 
 .slider::after {

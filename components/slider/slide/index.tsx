@@ -26,7 +26,7 @@ const Slide = (props: any) => {
                 <h2 className='margin-l-bottom'>{props.slide.title}</h2>
                 <p className='margin-l-bottom'>{props.slide.description}</p>
                 {props.slide.features &&
-                    <Checklist slide={props.slide} theme={props.theme || 'bright'} className='margin-l-bottom'></Checklist>
+                    <Checklist slide={props.slide} theme={props.theme || 'dark'} className='margin-l-bottom'></Checklist>
                 }
                 {props.slide.url &&
                     <Button href={props.slide.url} theme='primary' buttonLabel={props.slide.buttonLabel} />

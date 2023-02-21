@@ -22,30 +22,27 @@ export default function Home() {
 
         if(slide.type == 'hero') {
           return (
-            <Hero {...slide}/>
+            <Hero {...slide} key={index} />
           );
         }
 
         if(slide.type == 'summary') {
           return (
-            <Cards {...slide}/>
+            <Cards {...slide} key={index} />
           );
         }
 
         if(slide.type == 'slider') {
           return (
-            <Slider content={slide} />
+            <Slider content={slide} key={index} />
           );
         }
 
         if(slide.type == 'slide') {
           return (
-            <Slide slide={slide} />
+            <Slide slide={slide} key={index} />
           );
         }
-
-      
-         
       })}
         
         

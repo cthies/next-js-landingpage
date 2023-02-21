@@ -9,7 +9,6 @@
 
 .slide img {
   object-fit: cover;
-  border-radius: 50%;
   max-width: 320px;
   max-height: 320px;
   margin: 0 auto;
