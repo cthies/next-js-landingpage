@@ -7,8 +7,11 @@
 
   --foreground: #eae9e9;
   --background: #333;
-  --highlight-bg: #00ffff;
-  --separator-bg: #1a5757;
+  --highlight-bg: #5ab3b3;
+  --highlight-bg-light: #56e1e1;
+  --separator-bg: #366868;
+
+  --separator-bg-light:#22854b;
 
   --callout-rgb: 20, 20, 20;
   --callout-border-rgb: 108, 108, 108;
