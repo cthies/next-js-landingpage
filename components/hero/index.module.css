@@ -12,11 +12,11 @@
   background: linear-gradient(-45deg, var(--separator-bg-light), var(--separator-bg), var(--highlight-bg), var(--highlight-bg-light));
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-  top: 50px;
+  top: 16px;
   right: -5%;
   bottom: -22px;
   left: -5%;
-  transform: skew(1deg, 5deg);
+  transform: skew(7deg, 5deg);
 }
 
 @keyframes gradient {

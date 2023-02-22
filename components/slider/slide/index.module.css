@@ -19,11 +19,11 @@
   justify-content: center;
 }
 
-.slide .content {
+.content {
   padding: 20px;
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 768px) {
   .slide {
     display: flex;
     flex-direction: row;
@@ -36,11 +36,15 @@
   }
 
   .alignRight {
-    flex-direction: row-reverse
+    flex-direction: row-reverse;
   }
 
 
-  .slide .content {
-    width: 50%;
+  .slide > * {
+    flex: 1;
+  }
+
+  .textCenter {
+    text-align: center;
   }
 }

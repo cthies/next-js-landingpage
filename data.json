@@ -46,7 +46,7 @@
         "id": "1",
         "slides": [
             {
-                "id": 1,
+                "id": "slide1",
                 "imageSrc": "src/icons/forensic-member-services-svgrepo-com.svg",
                 "title": "Slide1",
                 "description": "Lorem ipsum dolor sit amet, consectur dolori",
@@ -54,7 +54,7 @@
                 "features": ["ListItem", "ListItem", "ListItem"]
             },
             {
-                "id": 2,
+                "id": "slide2",
                 "imageSrc": "src/icons/legal-service-svgrepo-com.svg",
                 "title": "Slide2",
                 "description": "Lorem ipsum dolor sit amet, consectur dolori",
@@ -62,7 +62,7 @@
                 "features": ["ListItem", "ListItem"]
             },
             {
-                "id": 3,
+                "id": "slide3",
                 "imageSrc": "src/icons/community-corrections-bureau-svgrepo-com.svg",
                 "title": "Slide3",
                 "description": "Lorem ipsum dolor sit amet, consectur dolori",
@@ -71,7 +71,7 @@
                 "url": "#"
             },
             {
-                "id": 4,
+                "id": "slide4",
                 "imageSrc": "src/icons/forensic-member-services-svgrepo-com.svg",
                 "title": "Slide4",
                 "description": "Lorem ipsum dolor sit amet, consectur dolori",
@@ -84,29 +84,33 @@
         "type": "slide",
         "id": 2,
         "imageSrc": "src/icons/remote-teaching-svgrepo-com.svg",
-        "title": "Slide1",
+        "title": "Slide2",
         "description": "Lorem ipsum dolor sit amet, consectur dolori",
-        "pricingText": "Pricing",
         "features": ["ListItem", "ListItem", "ListItem"],
         "align": "right"
     },
     {
         "type": "slide",
         "id": 3,
-        "imageSrc": "src/icons/industry-association-svgrepo-com.svg",
-        "title": "Slide1",
-        "description": "Lorem ipsum dolor sit amet, consectur dolori",
-        "pricingText": "Pricing",
-        "features": ["ListItem", "ListItem", "ListItem"]
+        "title": "Slide3",
+        "description": "Lorem ipsum dolor sit amet, consectur dolori Lorem ipsum dolor sit amet, consectur dolori. Lorem ipsum dolor sit amet, consectur dolori. Lorem ipsum dolor sit amet, consectur dolori",
+        "buttonLabel": "ButtonLabel",
+        "url": "#"
     },
      {
         "type": "slide",
         "id": 4,
         "imageSrc": "src/icons/drug-management-svgrepo-com.svg",
-        "title": "Slide1",
-        "description": "Lorem ipsum dolor sit amet, consectur dolori",
-        "pricingText": "Pricing",
-        "features": ["ListItem", "ListItem", "ListItem"],
+        "title": "Slide4",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         "align": "right"
-    }
+    },
+    {
+       "type": "slide",
+       "id": 5,
+       "imageSrc": "src/icons/industry-association-svgrepo-com.svg",
+       "title": "Slide5",
+       "description": "Lorem ipsum dolor sit amet, consectur dolori",
+       "features": ["ListItem", "ListItem", "ListItem"]
+   }
     ]}

@@ -11,9 +11,11 @@ export default function Slider(props: any) {
       slidesToSlide: 1
     },
     tablet: {
-      breakpoint: { max: 980, min: 464 },
-      items: 2,
-      slidesToSlide: 2
+      breakpoint: { max: 979, min: 645 },
+      items: 1,
+      slidesToSlide: 1,
+      infinite: true,
+      dots: true
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
