@@ -1,23 +1,29 @@
 import styles from './index.module.css';
-import Link from 'next/link';
-import Checklist from '@/components/checklist';
+import Image from 'next/image';
 
-const Card = (post: any) => {
+const Card = (person: any) => {
     return (
-        <Link
-            href={post.url}
-            className={styles.card}
-            rel="noopener noreferrer"
-        >
+        <div className={styles.card}>
+            {person.img &&
+                <div className={styles.imageWrapper}>
+                    <Image
+                        src={person.img}
+                        alt={person.name}
+                        width={500}
+                        height={500}
+                        loading="lazy"
+                    />
+                </div>
+            }
             <h2>
-                {post.title} <span className={styles.arrow}>&#10140;</span>
+                {person.name}
             </h2>
-            <p className='margin-default-bottom'>
-                {post.content}
-            </p>
-            
-            <Checklist slide={post} theme='dark' align='left'></Checklist>
-        </Link>
+            <span className={`margin-default-bottom ${styles.quote}`}>
+                <span className={styles.quotation}>&ldquo;</span>
+                {person.quote}
+                <span className={`${styles.end} ${styles.quotation}`}>&rdquo;</span> 
+            </span>
+        </div>
     )
 }
 export default Card;

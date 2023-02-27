@@ -26,7 +26,7 @@ export default function Home() {
           );
         }
 
-        if(slide.type == 'summary') {
+        if(slide.type == 'testimonial') {
           return (
             <Cards {...slide} key={index} />
           );
