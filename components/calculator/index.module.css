@@ -1,0 +1,128 @@
+.container {
+  padding: 30px 15px;
+  position: relative;
+}
+
+.container::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: var(--CalculatorImg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container.male::before {
+  background-image: var(--CalculatorImgMale);
+}
+
+.container.female::before {
+  background-image: var(--CalculatorImgFemale);
+}
+
+.calculator {
+  margin: 0 auto;
+  padding: 30px 15px;
+  background: rgba(255, 255, 255, .8);
+  border-radius: 25px;
+}
+
+.headline {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: inline-block;
+  width: 35%;
+  margin-right: 5%;
+
+}
+
+.input {
+  width: 60%;
+  display: inline-block;
+  border: 1px solid var(--callout-background);
+  padding: 1rem 1.3rem;
+  margin: 0 0 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.error {
+  color: red;
+}
+
+.hide {
+  display: none;
+}
+
+/* Buttons styles start */
+.btn {
+  display: inline-block;
+  border: none;
+  padding: 1rem 1.3rem;
+  margin: 0 15px 0 0;
+  text-decoration: none;
+  background: var(--callout-background);
+  border-radius: 5px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--callout-hover-background);
+}
+
+.btn:focus {
+  outline: 1px solid white;
+  outline-offset: -4px;
+}
+
+.btn:active {
+  transform: scale(0.99);
+}
+
+.reset {
+  background: white;
+  color: black;
+}
+
+/* Buttons styles end */
+
+.result {
+  margin: 30px 0;
+}
+
+@media screen and (min-width: 980px) {
+  .container {
+    padding: 30px;
+  }
+
+  .container::before {
+    left: -1600px;
+    right: -1600px;
+    background-position: center;
+    background-size: 100% auto;
+  }
+
+  .calculator {
+    padding: 30px;
+    max-width: 460px;
+  }
+
+  .input {
+    margin: 0 0 30px;
+  }
+}

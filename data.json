@@ -108,5 +108,21 @@
        "title": "Slide5",
        "description": "Lorem ipsum dolor sit amet, consectur dolori",
        "features": ["ListItem", "ListItem", "ListItem"]
-   }
+   },
+   {
+      "type": "calculator",
+      "id": 6,
+      "title": "BMI Calculator",
+      "error": "Please enter your height and weight",
+      "result": "Your BMI is:",
+      "labelMale": "Male",
+      "labelFemale": "Female",
+      "labelWeight": "Weight",
+      "labelWeightUnit": "(in kg)",
+      "labelHeight": "Height",
+      "labelHeightUnit": "(in cm)",
+      "oldMetric": "Your BMI related to the old calculation:",
+      "submit": "Submit",
+      "reset": "Reset"
+  }
     ]}

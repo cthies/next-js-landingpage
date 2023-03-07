@@ -6,6 +6,8 @@ import Slider from '@/components/slider'
 import Slide from '@/components/slider/slide'
 import styles from '@/styles/Home.module.css'
 import content from '../data.json';
+import Calculator from '@/components/calculator'
+import { useState } from "react";
 
 export default function Home() {
   return (
@@ -43,8 +45,13 @@ export default function Home() {
             <Slide slide={slide} key={index} />
           );
         }
+
+        if(slide.type == 'calculator') {
+          return (
+            <Calculator  {...slide} key={index} />
+          );
+        }
       })}
-        
         
       </main>
     </>
