@@ -5,7 +5,7 @@
         "title": "Discover our landingpage",
         "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
         "buttonLabel": "See details",
-        "url": "#",
+        "url": "#bmi",
         "image": "src/icons/annual-assessment-svgrepo-com.svg"
     },
     {
@@ -37,6 +37,35 @@
             "img": "src/icons/lawyer-member-services-svgrepo-com.svg"
         }
     ]},
+    {
+       "type": "calculator",
+       "id": "bmi",
+       "title": "BMI Calculator",
+       "error": "Please enter your height and weight",
+       "result": "Your BMI is:",
+       "labelMale": "Male",
+       "labelFemale": "Female",
+       "labelWeight": "Weight",
+       "labelWeightUnit": "(in kg)",
+       "labelHeight": "Height",
+       "labelHeightUnit": "(in cm)",
+       "oldMetric": "Your BMI related to the old calculation:",
+       "submit": "Submit",
+       "reset": "Reset",
+       "resultUnder": "You are underweight",
+       "resultNormal": "You are a healthy weight",
+       "resultOver": "You are overweight",
+       "firstName": "Firstname",
+       "info": "Get personalized information related to your goal."
+     },
+     {
+        "type": "slide",
+        "id": 3,
+        "title": "Slide3",
+        "description": "Lorem ipsum dolor sit amet, consectur dolori Lorem ipsum dolor sit amet, consectur dolori. Lorem ipsum dolor sit amet, consectur dolori. Lorem ipsum dolor sit amet, consectur dolori",
+        "buttonLabel": "ButtonLabel",
+        "url": "#"
+    },
      {
         "type": "slider",
         "id": "1",
@@ -85,21 +114,12 @@
         "features": ["ListItem", "ListItem", "ListItem"],
         "align": "right"
     },
-    {
-        "type": "slide",
-        "id": 3,
-        "title": "Slide3",
-        "description": "Lorem ipsum dolor sit amet, consectur dolori Lorem ipsum dolor sit amet, consectur dolori. Lorem ipsum dolor sit amet, consectur dolori. Lorem ipsum dolor sit amet, consectur dolori",
-        "buttonLabel": "ButtonLabel",
-        "url": "#"
-    },
      {
         "type": "slide",
         "id": 4,
         "imageSrc": "src/icons/drug-management-svgrepo-com.svg",
         "title": "Slide4",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-        "align": "right"
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
     },
     {
        "type": "slide",
@@ -107,22 +127,7 @@
        "imageSrc": "src/icons/industry-association-svgrepo-com.svg",
        "title": "Slide5",
        "description": "Lorem ipsum dolor sit amet, consectur dolori",
-       "features": ["ListItem", "ListItem", "ListItem"]
-   },
-   {
-      "type": "calculator",
-      "id": 6,
-      "title": "BMI Calculator",
-      "error": "Please enter your height and weight",
-      "result": "Your BMI is:",
-      "labelMale": "Male",
-      "labelFemale": "Female",
-      "labelWeight": "Weight",
-      "labelWeightUnit": "(in kg)",
-      "labelHeight": "Height",
-      "labelHeightUnit": "(in cm)",
-      "oldMetric": "Your BMI related to the old calculation:",
-      "submit": "Submit",
-      "reset": "Reset"
-  }
+       "features": ["ListItem", "ListItem", "ListItem"],
+       "align": "right"
+   }
     ]}

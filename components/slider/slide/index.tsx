@@ -5,7 +5,6 @@ import Checklist from '@/components/checklist';
 import Button from '@/components/button';
 
 const Slide = (props: any) => {
-    
     return (
         <div className={`${props.slide.align === "right" ? styles.alignRight : ""} ${props.slide.imageSrc === undefined ? styles.textCenter : ""} ${styles.slide} ${props.theme ? styles[props.theme] : ""}`} id={props.slide.id}>
             {props.slide.imageSrc &&

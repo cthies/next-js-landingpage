@@ -1,7 +1,7 @@
 import styles from './index.module.css';
 import React, { useState } from 'react'
 
-function Calculator(content: any) {
+function Calculator({ content, userName, setUserName }) {
 
   // state
   const [weight, setWeight] = useState(0)
@@ -11,6 +11,10 @@ function Calculator(content: any) {
   const [message, setMessage] = useState('')
   const [error, setError] = useState('')
   const [gender, setGender] = useState(0);
+
+  const handleChange = (e) => {
+    setUserName(e.target.value);
+  };
 
   const handleFormReset = () => {
     setMessage('');
@@ -62,21 +66,23 @@ function Calculator(content: any) {
 
   return (
 
-    <div className={`${styles.container}  ${gender === 2 ? styles.male : ""} ${gender === 1 ? styles.female : ""}`}>
+    <div id={content.id} className={`${styles.container}  ${gender === 2 ? styles.male : ""} ${gender === 1 ? styles.female : ""}`}>
       <form onSubmit={handleSubmit} className={styles.calculator} onReset={handleFormReset}>
         <h2 className={styles.headline}>
           {content.title}
         </h2>
 
         {error &&
-          <div className={styles.error}>{error}</div>
+          <p className={styles.error}>{error}</p>
         }
-
-        <input type="radio" name="gender" value="2" id="male" onChange={setMale} />
-        <label htmlFor="male">{content.labelMale}</label>
-
-        <input type="radio" name="gender" value="1" id="female" onChange={setFemale} />
-        <label htmlFor="female">{content.labelFemale}</label>
+        <div>
+          <input type="radio" name="gender" value="2" id="male" onChange={setMale} />
+          <label htmlFor="male">{content.labelMale}</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" value="1" id="female" onChange={setFemale} />
+          <label htmlFor="female">{content.labelFemale}</label>
+        </div>
 
         <div>
           <label htmlFor="weight" className={styles.label}>
@@ -90,6 +96,14 @@ function Calculator(content: any) {
             {content.labelHeight} <small>{content.labelHeightUnit}</small>
           </label>
           <input className={styles.input} name="height" type="number" value={height} onChange={(e) => setHeight(e.target.value)} />
+        </div>
+
+        <div>
+          <p>
+            {content.info}
+          </p>
+          <label htmlFor="male" className={styles.label}>{content.firstName}</label>
+          <input autoComplete="given-name" className={styles.input} type="text" name="userName" id="userName" defaultValue={userName} onChange={handleChange} />
         </div>
 
         <div>

@@ -10,6 +10,7 @@ import Calculator from '@/components/calculator'
 import { useState } from "react";
 
 export default function Home() {
+  const [userName, setUserName] = useState("Didi");
   return (
     <>
       <Head>
@@ -36,7 +37,7 @@ export default function Home() {
 
         if(slide.type == 'slider') {
           return (
-            <Slider content={slide} key={index} />
+            <Slider userName={userName} content={slide} key={index} />
           );
         }
 
@@ -48,7 +49,7 @@ export default function Home() {
 
         if(slide.type == 'calculator') {
           return (
-            <Calculator  {...slide} key={index} />
+            <Calculator  content={slide} userName={userName} setUserName={setUserName} key={index} />
           );
         }
       })}

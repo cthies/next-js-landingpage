@@ -3,7 +3,7 @@ import "react-multi-carousel/lib/styles.css";
 import styles from './index.module.css';
 import Slide from '@/components/slider/slide'
 
-export default function Slider(props: any) {
+function Slider({ content, userName }) {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 980 },
@@ -26,12 +26,14 @@ export default function Slider(props: any) {
     }
   };
   return (
-    <div className={`margin-xl-bottom ${styles.slider}`} id={props.content.id}>
+    <div className={`margin-xl-bottom ${styles.slider}`} id={content.id}>
+       {userName &&
+            <h2 className={`margin-xl-bottom ${styles.headline}`}>Hi {userName}, here are your benefits:</h2>
+        }
       <Carousel
         responsive={responsive}
-
       >
-        {props.content.slides.map((slide: any, index: any) => {
+        {content.slides.map((slide: any, index: any) => {
           return (
             <Slide key={index} slide={slide} theme="bright" />
           );
@@ -40,3 +42,4 @@ export default function Slider(props: any) {
     </div>
   )
 }
+export default Slider;
