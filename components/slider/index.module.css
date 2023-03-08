@@ -11,13 +11,22 @@
   z-index: -1;
   background-color: var(--separator-bg);
   top: 0;
-  right: -50%;
+  right: 0;
   bottom: 0;
-  left: -50%;
+  left: 0;
+}
+
+.headline {
+ padding: 0 15px;
 }
 
 @media screen and (min-width: 980px) {
   .headline {
     text-align: center;
+  }
+
+  .slider::after {
+    right: -1600px;
+    left: -1600px;
   }
 }

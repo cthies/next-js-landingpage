@@ -3,7 +3,14 @@ import "react-multi-carousel/lib/styles.css";
 import styles from './index.module.css';
 import Slide from '@/components/slider/slide'
 
-function Slider({ content, userName }) {
+type SliderProps = {
+  content: any;
+  userName: string;
+};
+
+const Slider: React.FunctionComponent<SliderProps> = (props) => {
+  const { content, userName } = props;
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 980 },

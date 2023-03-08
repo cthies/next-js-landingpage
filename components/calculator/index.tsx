@@ -1,7 +1,15 @@
 import styles from './index.module.css';
 import React, { useState } from 'react'
 
-function Calculator({ content, userName, setUserName }) {
+
+  type CalculatorProps = {
+    content: any;
+    userName: string;
+    setUserName: any;
+  };
+  
+  const Calculator: React.FunctionComponent<CalculatorProps> = (props) => {
+    const { content, userName, setUserName } = props;
 
   // state
   const [weight, setWeight] = useState(0)
@@ -12,7 +20,7 @@ function Calculator({ content, userName, setUserName }) {
   const [error, setError] = useState('')
   const [gender, setGender] = useState(0);
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     setUserName(e.target.value);
   };
 
@@ -88,14 +96,14 @@ function Calculator({ content, userName, setUserName }) {
           <label htmlFor="weight" className={styles.label}>
             {content.labelWeight} <small>{content.labelWeightUnit}</small>
           </label>
-          <input className={styles.input} name="weight" type="number" value={weight} onChange={(e) => setWeight(e.target.value)} />
+          <input className={styles.input} name="weight" type="number" value={weight} onChange={(e) => setWeight(parseInt(e.target.value))} />
         </div>
 
         <div>
           <label htmlFor="height" className={styles.label}>
             {content.labelHeight} <small>{content.labelHeightUnit}</small>
           </label>
-          <input className={styles.input} name="height" type="number" value={height} onChange={(e) => setHeight(e.target.value)} />
+          <input className={styles.input} name="height" type="number" value={height} onChange={(e) => setHeight(parseInt(e.target.value))} />
         </div>
 
         <div>

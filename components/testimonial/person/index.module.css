@@ -18,6 +18,14 @@
 .imageWrapper {
   display: flex;
   justify-content: center;
+  background-color: lavender;
+  border-top: 10px solid #fff;
+  border-right: 10px solid #fff;
+  border-bottom: 30px solid #fff;
+  border-left: 10px solid #fff;
+  -webkit-box-shadow: 5px 5px 15px 5px #a4a0a0; 
+  box-shadow: 5px 5px 15px 5px #a4a0a0;
+  margin-bottom: 30px;
 }
 
 .imageWrapper img {

@@ -78,7 +78,7 @@ a {
   left: calc(-2% + 1px);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .react-multi-carousel-list .react-multiple-carousel__arrow--right {
     right: calc(-7% + 1px);
     top: inherit;

@@ -1,7 +1,7 @@
 import styles from './index.module.css';
 import Image from 'next/image';
 
-const Card = (person: any) => {
+const Person = (person: any) => {
     return (
         <div className={styles.card}>
             {person.img &&
@@ -26,4 +26,4 @@ const Card = (person: any) => {
         </div>
     )
 }
-export default Card;
+export default Person;

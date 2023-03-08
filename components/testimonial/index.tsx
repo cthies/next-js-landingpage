@@ -1,4 +1,4 @@
-import Card from '@/components/cards/card';
+import Person from '@/components/testimonial/person';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from './index.module.css';
@@ -29,11 +29,11 @@ export default function Cards(props: any) {
         autoPlay
         autoPlaySpeed={5000}
         showDots={false}
-        infinite
+        infinite={false}
       >
         {props.persons.map((person: any, index: any) => {
         return (
-          <Card key={index} {...person} />
+          <Person key={index} {...person} />
         );
       })}
       </Carousel>

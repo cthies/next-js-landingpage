@@ -74,4 +74,9 @@
     width: 50%;
     margin-right: auto;
   }
+
+  .hero::after {
+    right: -1600px;
+    left: -1600px;
+  }
 }
