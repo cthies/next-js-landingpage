@@ -1,0 +1,25 @@
+.article {
+  margin-bottom: 60px;
+}
+
+.content {
+  padding: 0 var(--spacing-default);
+}
+
+.imageWrapper {
+  position: relative;
+  height: 500px;
+  margin-bottom: 30px;
+  overflow: hidden
+}
+
+.imageWrapper img {
+  object-fit: cover;
+}
+
+@media screen and (min-width: 680px) {
+  .content {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+}

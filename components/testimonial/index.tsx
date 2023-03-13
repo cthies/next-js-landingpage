@@ -3,7 +3,12 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from './index.module.css';
 
-export default function Cards(props: any) {
+type TestimonialSliderProps = {
+  slider: any;
+};
+
+const TestimonialSlider: React.FunctionComponent<TestimonialSliderProps> = (props) => {
+  const { slider } = props;
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 980 },
@@ -22,7 +27,9 @@ export default function Cards(props: any) {
     }
   };
   return (
-    <div className={`margin-xl-bottom ${styles.cards}`}>
+    
+    <div className={`row margin-xl-bottom ${styles.testimonials}`}>
+      <h2 className={styles.headline}>{slider.title}</h2>
       <Carousel
         responsive={responsive}
         arrows={false}
@@ -31,7 +38,7 @@ export default function Cards(props: any) {
         showDots={false}
         infinite={false}
       >
-        {props.persons.map((person: any, index: any) => {
+        {slider.persons.map((person: any, index: any) => {
         return (
           <Person key={index} {...person} />
         );
@@ -40,3 +47,4 @@ export default function Cards(props: any) {
     </div>
   )
 }
+export default TestimonialSlider;

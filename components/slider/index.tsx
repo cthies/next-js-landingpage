@@ -4,12 +4,12 @@ import styles from './index.module.css';
 import Slide from '@/components/slider/slide'
 
 type SliderProps = {
-  content: any;
+  slider: any;
   userName: string;
 };
 
 const Slider: React.FunctionComponent<SliderProps> = (props) => {
-  const { content, userName } = props;
+  const { slider, userName } = props;
 
   const responsive = {
     desktop: {
@@ -32,15 +32,21 @@ const Slider: React.FunctionComponent<SliderProps> = (props) => {
       dots: true
     }
   };
+
+  //set Headline if userName was given in calculator
+  let headlineTag;
+  if (userName) {
+    let greeting = slider.greeting.replace("%s", userName);
+    headlineTag = <h2 className={`margin-xl-bottom ${styles.headline}`}>{greeting}</h2>;
+  }
+
   return (
-    <div className={`margin-xl-bottom ${styles.slider}`} id={content.id}>
-       {userName &&
-            <h2 className={`margin-xl-bottom ${styles.headline}`}>Hi {userName}, here are your benefits:</h2>
-        }
+    <div className={`margin-xl-bottom ${styles.slider}`} id={slider.id}>
+      {headlineTag}
       <Carousel
         responsive={responsive}
       >
-        {content.slides.map((slide: any, index: any) => {
+        {slider.slides.map((slide: any, index: any) => {
           return (
             <Slide key={index} slide={slide} theme="bright" />
           );

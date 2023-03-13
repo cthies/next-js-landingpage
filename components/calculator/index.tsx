@@ -1,19 +1,18 @@
 import styles from './index.module.css';
 import React, { useState } from 'react'
+import Button from '@/components/button';
 
+type CalculatorProps = {
+  content: any;
+  userName: string;
+  setUserName: any;
+};
 
-  type CalculatorProps = {
-    content: any;
-    userName: string;
-    setUserName: any;
-  };
-  
-  const Calculator: React.FunctionComponent<CalculatorProps> = (props) => {
-    const { content, userName, setUserName } = props;
+const Calculator: React.FunctionComponent<CalculatorProps> = (props) => {
+  const { content, userName, setUserName } = props;
 
-  // state
-  const [weight, setWeight] = useState(0)
-  const [height, setHeight] = useState(0)
+  const [weightValue, setWeight] = useState('')
+  const [heightValue, setHeight] = useState('')
   const [bmi, setBmi] = useState('')
   const [bmiOldMetric, setBmiOldMetric] = useState('')
   const [message, setMessage] = useState('')
@@ -27,13 +26,16 @@ import React, { useState } from 'react'
   const handleFormReset = () => {
     setMessage('');
     setError('');
-    setWeight(0);
-    setHeight(0);
+    setWeight('');
+    setHeight('');
   }
 
   const handleSubmit = async (event: any) => {
     // Stop the form from submitting and refreshing the page.
-    event.preventDefault()
+    event.preventDefault();
+
+    let weight = parseInt(weightValue);
+    let height = parseInt(heightValue);
 
     if (weight == 0 || height == 0) {
       setError(content.error)
@@ -57,7 +59,7 @@ import React, { useState } from 'react'
         Krankhaft übergewichtig	40,0 oder mehr
         */
 
-      if (bmi < 14.9) {
+      if (bmi < 18.9) {
         setMessage(content.resultUnder)
       } else if (bmi >= 19 && bmi < 24.9) {
         setMessage(content.resultNormal)
@@ -74,7 +76,7 @@ import React, { useState } from 'react'
 
   return (
 
-    <div id={content.id} className={`${styles.container}  ${gender === 2 ? styles.male : ""} ${gender === 1 ? styles.female : ""}`}>
+    <div id={content.id} className={`row ${styles.container}  ${gender === 2 ? styles.male : ""} ${gender === 1 ? styles.female : ""}`}>
       <form onSubmit={handleSubmit} className={styles.calculator} onReset={handleFormReset}>
         <h2 className={styles.headline}>
           {content.title}
@@ -93,17 +95,17 @@ import React, { useState } from 'react'
         </div>
 
         <div>
-          <label htmlFor="weight" className={styles.label}>
+          <label htmlFor="weightValue" className={styles.label}>
             {content.labelWeight} <small>{content.labelWeightUnit}</small>
           </label>
-          <input className={styles.input} name="weight" type="number" value={weight} onChange={(e) => setWeight(parseInt(e.target.value))} />
+          <input className={styles.input} name="weightValue" type="number" value={weightValue} required onChange={(e) => setWeight(e.target.value || '')} />
         </div>
 
         <div>
-          <label htmlFor="height" className={styles.label}>
+          <label htmlFor="heightValue" className={styles.label}>
             {content.labelHeight} <small>{content.labelHeightUnit}</small>
           </label>
-          <input className={styles.input} name="height" type="number" value={height} onChange={(e) => setHeight(parseInt(e.target.value))} />
+          <input className={styles.input} name="heightValue" type="number" value={heightValue} required onChange={(e) => setHeight(e.target.value || '')} />
         </div>
 
         <div>
@@ -114,12 +116,12 @@ import React, { useState } from 'react'
           <input autoComplete="given-name" className={styles.input} type="text" name="userName" id="userName" defaultValue={userName} onChange={handleChange} />
         </div>
 
-        <div>
-          <button type="submit" className={styles.btn}>{content.submit}</button>
-          <button type="reset" className={`${styles.reset} ${styles.btn}`}>{content.reset}</button>
+        <div className={styles.btnWrapper}>
+          <Button theme='primary' type="submit" buttonLabel={content.submit} />
+          <Button theme='secondary' type="reset" buttonLabel={content.reset} />
         </div>
 
-        <div className={`${message === "" ? styles.hide : ""}`}>
+        <div className={`${styles.result} ${message === "" ? styles.hide : ""}`}>
           <h3>{content.result} {bmi}</h3>
           <p>{message}</p>
           <p>{content.oldMetric} {bmiOldMetric}</p>

@@ -1,0 +1,48 @@
+.article {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.imageWrapper {
+  position: relative;
+  height: 230px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  object-fit: cover;
+  transition: all .3s;
+}
+
+.content {
+  padding: 0 var(--spacing-default);
+}
+
+@media screen and (min-width: 680px) {
+  .article {
+    display: inline-block;
+    max-width: 50%;
+  }
+
+  .article:hover img {
+    transform: scale(1.1);
+  }
+
+  .article img {
+    width: 100%;
+    height: auto;
+  }
+
+  .imageWrapper {
+    height: 130px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .article {
+    display: inline-block;
+  }
+}

@@ -1,6 +1,5 @@
 .hero {
   padding: 1em 0;
-  margin-bottom: 60px;
   position: relative;
   color: var(--foreground);
 }

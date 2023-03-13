@@ -20,7 +20,7 @@
 }
 
 .content {
-  padding: 20px;
+  padding: var(--spacing-default);
 }
 
 @media screen and (min-width: 768px) {
@@ -38,7 +38,6 @@
   .alignRight {
     flex-direction: row-reverse;
   }
-
 
   .slide > * {
     flex: 1;

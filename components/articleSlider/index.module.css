@@ -1,0 +1,12 @@
+.headline {
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 680px) {
+  .articleSlider {
+    display: flex;
+    justify-content: space-between;
+    column-gap: var(--spacing-default);
+    margin:  0 var(--spacing-default);
+  }
+}

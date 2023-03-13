@@ -5,8 +5,15 @@ import Checklist from '@/components/checklist';
 import Button from '@/components/button';
 
 const Slide = (props: any) => {
+    let classNames = props.slide.align === "right" ? styles.alignRight : "";
+    classNames += props.slide.imageSrc === undefined ? styles.textCenter : "";
+    classNames += props.theme ? styles[props.theme] : "";
+    
     return (
-        <div className={`${props.slide.align === "right" ? styles.alignRight : ""} ${props.slide.imageSrc === undefined ? styles.textCenter : ""} ${styles.slide} ${props.theme ? styles[props.theme] : ""}`} id={props.slide.id}>
+        <div 
+            className={`${styles.slide} ${classNames}`}
+            id={props.slide.id}
+        >
             {props.slide.imageSrc &&
                 <div className={styles.imageWrapper}>
                     <Image
@@ -20,8 +27,8 @@ const Slide = (props: any) => {
             }
             <div className={styles.content}>
 
-                <h2 className='margin-l-bottom'>{props.slide.title}</h2>
-                <p className='margin-l-bottom'>{props.slide.description}</p>
+                <h2>{props.slide.title}</h2>
+                <p>{props.slide.description}</p>
                 {props.slide.features &&
                     <Checklist slide={props.slide} theme={props.theme || 'dark'} className='margin-l-bottom'></Checklist>
                 }
