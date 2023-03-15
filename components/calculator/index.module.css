@@ -41,7 +41,6 @@
   display: inline-block;
   width: 35%;
   margin-right: 5%;
-
 }
 
 .input {
@@ -53,6 +52,11 @@
   text-decoration: none;
   border-radius: 5px;
   background-color: white;
+}
+
+.fieldset {
+  margin-bottom: var(--spacing-default);
+  border: 0;
 }
 
 .error {

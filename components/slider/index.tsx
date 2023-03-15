@@ -6,10 +6,11 @@ import Slide from '@/components/slider/slide'
 type SliderProps = {
   slider: any;
   userName: string;
+  goal: Number;
 };
 
 const Slider: React.FunctionComponent<SliderProps> = (props) => {
-  const { slider, userName } = props;
+  const { slider, userName, goal } = props;
 
   const responsive = {
     desktop: {
@@ -37,18 +38,18 @@ const Slider: React.FunctionComponent<SliderProps> = (props) => {
   let headlineTag;
   if (userName) {
     let greeting = slider.greeting.replace("%s", userName);
-    headlineTag = <h2 className={`margin-xl-bottom ${styles.headline}`}>{greeting}</h2>;
+    headlineTag = <h2 className={styles.headline}>{greeting}</h2>;
   }
 
   return (
-    <div className={`margin-xl-bottom ${styles.slider}`} id={slider.id}>
+    <div className={styles.slider} id={slider.id}>
       {headlineTag}
       <Carousel
         responsive={responsive}
       >
         {slider.slides.map((slide: any, index: any) => {
           return (
-            <Slide key={index} slide={slide} theme="bright" />
+            <Slide key={index} slide={slide} goal={goal} theme="bright" />
           );
         })}
       </Carousel>

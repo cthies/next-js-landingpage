@@ -62,10 +62,6 @@ h1,h2,h3,h4,h5,h6,p {
   padding-bottom: var(--spacing-l);
 }
 
-.row:nth-child(odd) {
-  background: var(--background-light);
-}
-
 @media screen and (min-width: 1200px) {
   h1,h2,h3,h4,h5,h6,p {
     margin-bottom: var(--spacing-l);
@@ -87,6 +83,53 @@ h1,h2,h3,h4,h5,h6,p {
 
 .margin-xl-bottom {
   margin-bottom: var(--spacing-xl);
+}
+
+/* General form elements */
+label {
+  font-weight: bold;
+}
+
+label small {
+  white-space: nowrap;
+}
+
+/* Radio Button CSS */
+.radio-button-container {
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] + label {
+  margin-right: var(--spacing-l);
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  position: relative;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  min-width: 24px;
+  min-height: 24px;
+  margin-right: 8px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  background-color: #fff;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--callout-background);
 }
 
 /* set sliderArrows outside slider*/

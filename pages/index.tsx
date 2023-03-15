@@ -11,6 +11,8 @@ import ArticleSlider from '@/components/articleSlider'
 
 export default function Home() {
   const [userName, setUserName] = useState("");
+  const [goal, setGoal] = useState(1);
+
   return (
     <>
       <Head>
@@ -37,25 +39,19 @@ export default function Home() {
 
           if (slide.type == 'slider') {
             return (
-              <Slider userName={userName} slider={slide} key={index} />
+              <Slider userName={userName} slider={slide} goal={goal} key={index} />
             );
           }
 
           if (slide.type == 'slide') {
             return (
-              <Slide slide={slide} key={index} />
+              <Slide slide={slide} goal={goal} key={index} theme="dark" className="row" />
             );
           }
 
           if (slide.type == 'calculator') {
             return (
-              <Calculator content={slide} userName={userName} setUserName={setUserName} key={index} />
-            );
-          }
-
-          if (slide.type == 'calculator') {
-            return (
-              <Calculator content={slide} userName={userName} setUserName={setUserName} key={index} />
+              <Calculator content={slide} userName={userName} setUserName={setUserName} goal={goal} setGoal={setGoal} key={index} />
             );
           }
 
