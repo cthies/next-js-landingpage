@@ -6,10 +6,15 @@ const nextConfig = {
   },
 }
 
+const path = require('path');
+
 module.exports = {
+  reactStrictMode: true,
   i18n: {
-    locales: ['en'],
-    defaultLocale: 'en',
+    // The locales you want to support in your app
+    locales: ["en", "de"],
+    // The default locale you want to be used when visiting a non-locale prefixed path e.g. `/hello`
+    defaultLocale: "en",
   },
 };
 

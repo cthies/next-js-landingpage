@@ -4,14 +4,19 @@ import TestimonialSlider from '@/components/testimonial'
 import Slider from '@/components/slider'
 import Slide from '@/components/slider/slide'
 import styles from '@/styles/Home.module.css'
-import content from '../data.json';
 import Calculator from '@/components/calculator'
 import { useState } from "react";
 import ArticleSlider from '@/components/articleSlider'
+import de from "../lang/de.json";
+import en from "../lang/en.json";
+import Link from 'next/link'
 
 export default function Home() {
   const [userName, setUserName] = useState("");
   const [goal, setGoal] = useState(1);
+
+  const [content, setContent] = useState(en);
+  
 
   return (
     <>
@@ -22,7 +27,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-
         {content.content.map((slide: any, index: any) => {
 
           if (slide.type == 'hero') {
@@ -63,6 +67,9 @@ export default function Home() {
         })}
 
       </main>
+      <footer>
+        <Link href="#" onClick={(e) => setContent(de)}>deutsch</Link> | <Link href="#" onClick={(e) => setContent(en)}>english</Link>
+      </footer>
     </>
   )
 }

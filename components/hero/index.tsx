@@ -11,8 +11,14 @@ type HeroProps = {
   
     return (
         <div className={styles.hero}>
-            <Image src={slide.image} alt={slide.title} className={styles.logo}
-                width="500" height="500" />
+            <Image
+                    src={slide.image}
+                    alt={slide.title}
+                    width={500}
+                    height={500}
+                    loading="lazy"
+                    className={styles.logo}
+                />
             <div className={styles.content}>
                 <span className={styles.badge}>
                     {slide.badge}

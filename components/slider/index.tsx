@@ -49,7 +49,7 @@ const Slider: React.FunctionComponent<SliderProps> = (props) => {
       >
         {slider.slides.map((slide: any, index: any) => {
           return (
-            <Slide key={index} slide={slide} goal={goal} theme="bright" />
+            <Slide key={index} slide={slide} goal={goal} theme="bright" className="" />
           );
         })}
       </Carousel>
