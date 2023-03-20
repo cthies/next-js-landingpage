@@ -17,6 +17,7 @@
             "title": "BMI Calculator",
             "error": "Please enter your height and weight",
             "result": "Your BMI is:",
+            "genderInfo": "This helps us to rate your BMI appropriately for men, women, children, juveniles and seniors:",
             "labelMale": "Male",
             "labelFemale": "Female",
             "labelGoal": "Your goal",

@@ -74,7 +74,7 @@ const Calculator: React.FunctionComponent<CalculatorProps> = (props) => {
           <p className={styles.error}>{error}</p>
         }
         <fieldset className={`radio-button-container ${styles.fieldset}`}>
-          <legend>This helps us to rate your BMI appropriately for men, women, children, juveniles and seniors:</legend>
+          <legend>{content.genderInfo}</legend>
           <input type="radio" name="gender" value="2" id="male" onChange={setMale} />
           <label htmlFor="male">{content.labelMale}</label>
 

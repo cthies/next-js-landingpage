@@ -5,64 +5,65 @@
         {
             "type": "hero",
             "badge": "BMI-Rechner",
-            "title": "Your body is your buddy",
-            "description": "The BMI (Body Mass Index) indicates the ratio of body weight to height. It is used as an orientation for the target weight of an adult. The BMI is calculated using the formula body weight (in kilograms) divided by height (in meters) squared. It also depends on age and gender.",
-            "buttonLabel": "Calculate your BMI",
+            "title": "Schätze ich mein Gewicht richtig ein?",
+            "description": "Der BMI (Body-Mass-Index) hilft, das Körpergewicht richtig zu deuten. Mit unserem BMI-Rechner lässt sich ganz einfach berechnen, ob Sie Normalgewicht haben, unter- oder übergewichtig sind. Sie brauchen nur Alter*, aktuelles Gewicht und Größe, um unseren Rechner gleich jetzt zu nutzen.",
+            "buttonLabel": "Berechne deinen BMI",
             "url": "#bmi",
             "image": "src/icons/annual-assessment-svgrepo-com.svg"
         },
         {
             "type": "calculator",
             "id": "bmi",
-            "title": "BMI Calculator",
-            "error": "Please enter your height and weight",
-            "result": "Your BMI is:",
-            "labelMale": "Male",
-            "labelFemale": "Female",
-            "labelGoal": "Your goal",
-            "goalWeightLoss": "Weight loss",
-            "goalHealth": "Healthy living",
-            "labelWeight": "Weight",
+            "title": "BMI Rechner",
+            "error": "Bitte gib dein Gewicht und deine Körpergröße ein!",
+            "result": "Dein BMI:",
+            "genderInfo": "Dies hilft uns, Ihren BMI für Männer, Frauen, Kinder, Jugendliche und Senioren angemessen einzuschätzen:",
+            "labelMale": "Männlich",
+            "labelFemale": "Weiblich",
+            "labelGoal": "Dein Ziel",
+            "goalWeightLoss": "Abnehmen",
+            "goalHealth": "Gesund leben",
+            "labelWeight": "Gewicht",
             "labelWeightUnit": "(in kg)",
-            "labelHeight": "Height",
+            "labelHeight": "Körpergröße",
             "labelHeightUnit": "(in cm)",
-            "oldMetric": "Your BMI related to the old calculation:",
-            "submit": "Submit",
-            "reset": "Reset",
-            "resultCategory": "You BMI category is: ",
+            "oldMetric": "Dein BMI anhand der alten Skala:",
+            "submit": "Berechnen",
+            "reset": "Zürücksetzen",
+            "resultCategory": "Deine BMI Kategorie: ",
             "resultNormal": "Normal",
-            "resultUnder": "Underweight",
-            "resultOver": "Overweight",
-            "resultObese": "Obese",
-            "firstName": "Firstname",
-            "info": "Get personalized information related to your goal."
+            "resultUnder": "Untergewicht",
+            "resultOver": "Übergewicht",
+            "resultObese": "Fettleibig",
+            "firstName": "Name",
+            "info": "Erhalte personalisierte Ergebnisse zu deinem Ziel."
         },
         {
             "type": "testimonial",
-            "title": "Our customers",
+            "title": "Was unsere Kunden sagen",
             "persons": [
                 {
                     "id": 1,
-                    "name": "Danilo",
-                    "quote": "I am making mindful food choices and have increased activity",
+                    "name": "Peter",
+                    "quote": "Ich treffe eine bewusste Auswahl von Lebensmitteln und habe mehr Aktivität",
                     "img": "src/icons/lawyer-member-services-svgrepo-com.svg"
                 },
                 {
                     "id": 2,
-                    "name": "Carol",
-                    "quote": "Thanks to the meal plan I started eating lots of fruits and veggies",
+                    "name": "Sabine",
+                    "quote": "Dank des Ernährungsplans fing ich an, viel Obst und Gemüse zu essen",
                     "img": "src/icons/lawyer-member-services-svgrepo-com.svg"
                 },
                 {
                     "id": 3,
-                    "name": "Brad",
-                    "quote": "I have created good eating habits to maintain life long success",
+                    "name": "Björn",
+                    "quote": "Ich habe gute Essgewohnheiten entwickelt, um den lebenslangen Erfolg zu erhalten",
                     "img": "src/icons/lawyer-member-services-svgrepo-com.svg"
                 },
                 {
                     "id": 4,
-                    "name": "Jeanne",
-                    "quote": "I work out regularly and am always up for trying new activities",
+                    "name": "Janine",
+                    "quote": "Ich trainiere regelmäßig und bin immer bereit, neue Aktivitäten auszuprobieren",
                     "img": "src/icons/lawyer-member-services-svgrepo-com.svg"
                 }
             ]
@@ -70,50 +71,50 @@
         {
             "type": "slide",
             "id": 3,
-            "title": "Live healthier with our nutrition programs",
+            "title": "Lebe gesünder mit unseren Ernährungsprogrammen",
             "titleWeight": "Loose weight with our program",
-            "description": "Do you want to change your diet sustainably and live healthier? We support you with our exclusive nutrition programs. Choose the offer that suits you best: Individual coaching or a 10-week online course. We pay the course costs for you.",
-            "buttonLabel": "Your benefits",
+            "description": "Du möchtest deine Ernährung nachhaltig umstellen und gesünder leben? Wir unterstützen Sie mit unseren exklusiven Ernährungsprogrammen. Wählen Sie das Angebot, das am besten zu Ihnen passt: Einzelcoaching oder 10-wöchiger Online-Kurs. Die Kurskosten übernehmen wir für Sie.",
+            "buttonLabel": "Deine Vorteile",
             "url": "#benefits"
         },
         {
             "type": "slider",
             "id": "benefits",
-            "greeting": "Hey %s, here are your benefits:",
+            "greeting": "Hey %s, das sind deine Vorteile:",
             "slides": [
                 {
                     "id": "slide1",
                     "imageSrc": "src/icons/forensic-member-services-svgrepo-com.svg",
-                    "title": "We support you with a healthy diet",
-                    "description": "Prioritizing your health is a challenge. Especially when things are stressful at work and the schedule is full. We support you step by step if you want to change your diet in the long term.",
+                    "title": "Wir unterstützen Sie bei einer gesunden Ernährung",
+                    "description": "Der Gesundheit Priorität einzuräumen ist eine Herausforderung. Vor allem, wenn es im Job stressig und der Terminkalender voll ist. Wir unterstützen Sie Schritt für Schritt, wenn Sie Ihre Ernährung langfristig umstellen möchten.",
                     "features": [
-                        "Health bonus",
-                        "Online Health Courses"
+                        "Gesundheitsbonus",
+                        "Online-Gesundheitskurse"
                     ]
                 },
                 {
                     "id": "slide2",
                     "imageSrc": "src/icons/legal-service-svgrepo-com.svg",
-                    "title": "Health bonus",
-                    "description": "Individual commitment to health prevents diseases. That is why we reward everyone who takes health courses. Get credit for your health bonus courses."
+                    "title": "Gesundheitsbonus",
+                    "description": "Individuelles Engagement für die Gesundheit beugt Krankheiten vor. Deshalb belohnen wir jeden, der an Gesundheitskursen teilnimmt. Lassen Sie sich Ihre Gesundheitsbonuskurse anrechnen."
                 },
                 {
                     "id": "slide3",
                     "imageSrc": "src/icons/community-corrections-bureau-svgrepo-com.svg",
-                    "title": "Online Health Courses",
-                    "description": "Take advantage of our numerous digital health courses and choose the right offer for you. Every year we subsidize two recognized online health courses with up to 150 euros each.",
-                    "buttonLabel": "See details",
+                    "title": "Online-Gesundheitskurse",
+                    "description": "Profitieren Sie von unseren zahlreichen Digital Health Kursen und wählen Sie das für Sie passende Angebot. Jedes Jahr bezuschussen wir zwei anerkannte Online-Gesundheitskurse mit jeweils bis zu 150 Euro.",
+                    "buttonLabel": "Mehr",
                     "url": "#course"
                 },
                 {
                     "id": "slide4",
                     "imageSrc": "src/icons/forensic-member-services-svgrepo-com.svg",
-                    "title": "The advantages of our online courses:",
-                    "description": "Every year we subsidize two recognized online health courses with up to 150 euros each.",
+                    "title": "Die Vorteile unserer Online-Kurse:",
+                    "description": "Jedes Jahr bezuschussen wir zwei anerkannte Online-Gesundheitskurse mit jeweils bis zu 150 Euro.",
 
                     "features": [
-                        "You are not tied to fixed course times.",
-                        "You can take your course from the comfort of your own home."
+                        "Sie sind nicht an feste Kurszeiten gebunden.",
+                        "Sie können Ihren Kurs bequem von zu Hause aus absolvieren."
                     ]
                 }
             ]
@@ -122,12 +123,12 @@
             "type": "slide",
             "id": "course",
             "imageSrc": "src/icons/industry-association-svgrepo-com.svg",
-            "title": "Free online prevention courses",
-            "description": "In ten 50-minute units, the trainer will carry out selected exercises with you to strengthen your back and abdominal muscles. This effective posture training counteracts back problems, tension and blockages in the long term. Accompanying documents support you in deepening the focus of the training and are available for download.",
+            "title": "Kostenlose Online-Präventionskurse",
+            "description": "In zehn 50-minütigen Einheiten führt der Trainer mit Ihnen ausgewählte Übungen zur Kräftigung Ihrer Rücken- und Bauchmuskulatur durch. Dieses effektive Haltungstraining wirkt Rückenproblemen, Verspannungen und Blockaden nachhaltig entgegen. Begleitende Unterlagen unterstützen Sie bei der Vertiefung der Trainingsschwerpunkte und stehen zum Download bereit.",
             "features": [
-                "Prevention courses for everyone who wants to be active in sports",
+                "Präventionskurse für alle, die sportlich aktiv werden wollen",
                 "Smartphone, Tablet, Smart-TV, PC, Laptop",
-                "No hidden costs"
+                "Keine versteckten Kosten"
             ],
             "align": "right"
         },
@@ -135,17 +136,17 @@
             "type": "slide",
             "id": "reimburse",
             "imageSrc": "src/icons/drug-management-svgrepo-com.svg",
-            "title": "How to get reimbursed:",
-            "description": "You pay for the course and attend at least 80 percent of the sessions. At the end of the course you will receive a receipt and a confirmation of participation. Please note your insurance number on it and simply send both to us. We do not require an application for reimbursement."
+            "title": "So erhalten Sie eine Rückerstattung:",
+            "description": "Sie bezahlen den Kurs und nehmen an mindestens 80 Prozent der Sitzungen teil. Am Ende des Kurses erhalten Sie eine Quittung und eine Teilnahmebestätigung. Bitte vermerken Sie darauf Ihre Versicherungsnummer und senden Sie uns beides einfach zu. Einen Erstattungsantrag benötigen wir nicht."
             
         },
         {
             "type": "slide",
             "id": "search",
             "imageSrc": "src/icons/remote-teaching-svgrepo-com.svg",
-            "title": "How to find the right online course:",
-            "description": "The following link will take you to the online courses in our course database. Select further search criteria there (e.g. \"Keyword\" or \"Course starts from\") and click on \"Start search\".",
-            "buttonLabel": "Find your course",
+            "title": "So finden Sie den passenden Online-Kurs:",
+            "description": "Über den folgenden Link gelangen Sie zu den Online-Kursen in unserer Kursdatenbank. Wählen Sie dort weitere Suchkriterien aus (z. B. \"Stichwort\" oder \"Kurs beginnt ab\") und klicken Sie auf \"Suche starten\".",
+            "buttonLabel": "Finde deinen Kurs",
             "url": "#",
             "align": "right"
         },
@@ -156,36 +157,36 @@
         },
         {
             "type": "articles",
-            "title": "Further Articles"
+            "title": "Weitere Artikel"
         }
     ],
     "articles": [
         {
             "slug": "article-1",
-            "title": "Article1",
-            "description": "Lorem ipsum dolor sit amet, consectur dolori",
-            "detail": "<h2>AboutUs</h2><p>developing and supporting complex IT solutions.Touchingmillions of lives world wide by bringing in innovative technology </p>",
+            "title": "Welchen Einfluss hat das Alter auf den BMI?",
+            "description": "Ab ca. 40 Jahren verschiebt sich das Normalgewicht aufgrund einer Veränderung des Stoffwechsels.",
+            "detail": "Experten gehen davon aus, dass sich ab einem Alter von etwa 40 Jahren das Normalgewicht aufgrund einer Veränderung des Stoffwechsels und der Zusammensetzung des Körpers verschiebt. Das führt dazu, dass mit zunehmendem Alter ein immer höherer BMI-Wert als Normalgewicht angesehen wird.",
             "image": "/src/img/2-5000x3333.jpg"
         },
         {
             "slug": "article-2",
-            "title": "Article2",
-            "description": "Lorem ipsum dolor sit amet, consectur dolori",
-            "detail": "<h2>AboutUs</h2><p>developing and supporting complex IT solutions.Touchingmillions of lives world wide by bringing in innovative technology </p>",
+            "title": "BMI-Rechner - der Unterschied der Geschlechter",
+            "description": "Die Formel bleibt, Unter- und Obergrenzen sind unterschiedlich",
+            "detail": "Bei Frauen wird der Body-Mass-Index mit derselben Formel berechnet wie bei Männern. Die Unter- und Obergrenzen werden bei Frauen jedoch etwas niedriger angesetzt. Experten gehen davon aus, dass erwachsene Männer häufig eine größere Muskelmasse besitzen als Frauen, und der BMI von Frauen und Männern daher abweicht. Zudem beeinflussen bei Frauen die Wechseljahre (Menopause) den BMI. ",
             "image": "/src/img/2-5000x3333.jpg"
         },
         {
             "slug": "article-3",
-            "title": "Article3",
-            "description": "Lorem ipsum dolor sit amet, consectur dolori",
-            "detail": "<h2>AboutUs</h2><p>developing and supporting complex IT solutions.Touchingmillions of lives world wide by bringing in innovative technology </p>",
+            "title": "Der ideale BMI aus medizinischer Sicht",
+            "description": "Idealgewichts oder Wohlfühlgewicht?",
+            "detail": "Empfehlenswert ist es, wenn sich der BMI--Body Mass Index bei Erwachsenen über 20 Jahre in einer Spanne von 18,5 bis 24,9 bewegt. In diesem Bereich spricht man von Normalgewicht und einem optimalen BMI. Etwa ein Drittel der Männer und rund die Hälfte der Frauen in Deutschland haben gemäß Klassifizierung einen normalen BMI und somit ein normales Gewicht. Häufig verwendet wurde der Begriff des Idealgewichts. Heute raten Experten von diesem Begriff eher ab, da es wichtiger ist, sich auf sein Körpergefühl zu verlassen und das persönliche Wohlfühlgewicht anzustreben. ",
             "image": "/src/img/2-5000x3333.jpg"
         },
         {
             "slug": "article-4",
-            "title": "Article4",
-            "description": "Lorem ipsum dolor sit amet, consectur dolori",
-            "detail": "<h2>AboutUs</h2><p>developing and supporting complex IT solutions.Touchingmillions of lives world wide by bringing in innovative technology </p>",
+            "title": "Die BMI-Formel",
+            "description": "Gewicht und Körpergröße im Verhältnis.",
+            "detail": "Der Body Mass Index (BMI) setzt Gewicht und Körpergröße ins Verhältnis. Die Formel, die dahinter liegt, setzt das Körpergewicht in Kilogramm mit der Körpergröße in Metern zum Quadrat ins Verhältnis:</p><p><strong>BMI-Formel = Körpergewicht (in kg) geteilt durch Körpergröße (in m) zum Quadrat.</strong></p>",
             "image": "/src/img/2-5000x3333.jpg"
         }
     ]
