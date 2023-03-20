@@ -11,10 +11,9 @@ const Article = (content: any) => {
                 <Image src={content.image} alt={content.title} className={styles.logo} 
                     width="500" height="500"/>
             </div>
-            <div className={styles.content}>
-                <h4>{content.title}</h4>
-                <p>{content.description}</p>
-            </div>
+            <h4 className={styles.headline}>{content.title}</h4>
+            <p className={styles.content}>{content.description}</p>
+            
         </Link>
     )
 }

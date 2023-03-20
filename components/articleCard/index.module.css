@@ -17,16 +17,19 @@
   transition: all .3s;
 }
 
-.content {
+.content,
+.headline {
   padding: 0 var(--spacing-default);
 }
 
 @media screen and (min-width: 680px) {
   .article {
-    display: inline-block;
-    max-width: 50%;
+    flex: 1 1 0;
+    width: 0;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
   }
-
   .article:hover img {
     transform: scale(1.1);
   }
@@ -39,10 +42,12 @@
   .imageWrapper {
     height: 130px;
   }
-}
 
-@media screen and (min-width: 980px) {
-  .article {
-    display: inline-block;
+  .article .headline {
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+    min-height: 65px;
   }
 }
