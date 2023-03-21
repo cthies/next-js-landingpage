@@ -1,16 +1,20 @@
 import styles from './index.module.css';
 import Image from 'next/image';
 import Button from '@/components/button';
+import LanguageSwitcher from '@/components/languageSwitcher';
 
 type HeroProps = {
     slide: any;
+    content: any;
+    setContent: any;
   };
   
   const Hero: React.FunctionComponent<HeroProps> = (props) => {
-    const { slide } = props;
+    const { slide, content, setContent } = props;
   
     return (
         <div className={styles.hero}>
+            <LanguageSwitcher content={content} setContent={setContent} />
             <Image
                     src={slide.image}
                     alt={slide.title}

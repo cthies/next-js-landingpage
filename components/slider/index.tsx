@@ -6,7 +6,7 @@ import Slide from '@/components/slider/slide'
 type SliderProps = {
   slider: any;
   userName: string;
-  goal: Number;
+  goal: string;
 };
 
 const Slider: React.FunctionComponent<SliderProps> = (props) => {

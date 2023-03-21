@@ -7,7 +7,7 @@ import Button from '@/components/button';
 type SlideProps = {
     slide: any;
     theme: string;
-    goal: Number;
+    goal: string;
     className: string;
 };
 
@@ -23,7 +23,7 @@ const Slide: React.FunctionComponent<SlideProps> = (props) => {
 
     //set goal depending content
     let headline = <h2>{slide.title}</h2>;
-    if (goal && goal == 2 && slide.titleWeight) {
+    if (goal && goal == '2' && slide.titleWeight) {
         headline = <h2>{slide.titleWeight}</h2>;
     }
 

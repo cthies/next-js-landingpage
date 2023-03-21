@@ -1,0 +1,41 @@
+.languageSwitcher {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--callout-background);
+    border: 1px solid var(--callout-background);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.languageSwitcher .radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline;
+    min-width: 0;
+    min-height: 0;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    border: none;
+}
+
+.languageSwitcher .radio::before,
+.languageSwitcher .radio:checked::before {
+    display: none;
+}
+
+.languageSwitcher .radio + label {
+    margin: 0;
+    padding: 10px;
+}
+
+.languageSwitcher .radio + label:hover {
+    cursor: pointer;
+}
+
+.languageSwitcher .radio:checked+label {
+    background: white;
+    color: var(--callout-background);
+}

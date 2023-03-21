@@ -5,33 +5,44 @@ import Slider from '@/components/slider'
 import Slide from '@/components/slider/slide'
 import styles from '@/styles/Home.module.css'
 import Calculator from '@/components/calculator'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ArticleSlider from '@/components/articleSlider'
 import de from "../lang/de.json";
 import en from "../lang/en.json";
 import Link from 'next/link'
 
 export default function Home() {
-  const [userName, setUserName] = useState("");
-  const [goal, setGoal] = useState(1);
+  /* defaults for user preferences */
+  const [userName, setUserName] = useState('');
+  const [goal, setGoal] = useState('1');
+  const [content, setContent] = useState('en');
+  let data = en;
 
-  const [content, setContent] = useState(en);
-  
+  /*get saved preferences*/
+  useEffect(() => {
+    setUserName(localStorage.getItem('nextjs-bmi-username') || '' );
+    setGoal(localStorage.getItem('nextjs-bmi-goal') || goal );
+    setContent(localStorage.getItem('nextjs-bmi-lang') == 'de' ? 'de' : 'en' );
+  }, []);
+
+  if (content === 'de') {
+    data = de;
+  }
 
   return (
     <>
       <Head>
-        <title>{content.title}</title>
-        <meta name="description" content={content.description} />
+        <title>{data.title}</title>
+        <meta name="description" content={data.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        {content.content.map((slide: any, index: any) => {
+        {data.content.map((slide: any, index: any) => {
 
           if (slide.type == 'hero') {
             return (
-              <Hero slide={slide} key={index} />
+              <Hero slide={slide} key={index} content={content} setContent={setContent} />
             );
           }
 
@@ -61,14 +72,15 @@ export default function Home() {
 
           if (slide.type == 'articles') {
             return (
-              <ArticleSlider content={slide} articles={content.articles} key={index} />
+              <ArticleSlider content={slide} articles={data.articles} key={index} />
             );
           }
         })}
 
       </main>
       <footer>
-        <Link href="#" onClick={(e) => setContent(de)}>deutsch</Link> | <Link href="#" onClick={(e) => setContent(en)}>english</Link>
+        <Link href="/imprint">Imprint</Link>
+        
       </footer>
     </>
   )

@@ -6,7 +6,7 @@ type CalculatorProps = {
   content: any;
   userName: string;
   setUserName: any;
-  goal: Number;
+  goal: string;
   setGoal: any;
 };
 
@@ -62,6 +62,18 @@ const Calculator: React.FunctionComponent<CalculatorProps> = (props) => {
   const setMale = () => setGender(2);
   const setFemale = () => setGender(1);
 
+  const handleGoal = (event: { target: { value: any; }; }) => {
+    let name = event.target.value;
+    localStorage.setItem('nextjs-bmi-goal', name);
+    setGoal(name);
+  }
+
+  const handleName = (event: { target: { value: any; }; }) => {
+    let name = event.target.value;
+    localStorage.setItem('nextjs-bmi-username', name);
+    setUserName(name);
+  }
+
   return (
 
     <div id={content.id} className={`row ${styles.container}  ${gender === 2 ? styles.male : ""} ${gender === 1 ? styles.female : ""}`}>
@@ -75,11 +87,13 @@ const Calculator: React.FunctionComponent<CalculatorProps> = (props) => {
         }
         <fieldset className={`radio-button-container ${styles.fieldset}`}>
           <legend>{content.genderInfo}</legend>
+          
+          <input type="radio" name="gender" value="1" id="female" onChange={setFemale} />
+          <label htmlFor="female">{content.labelFemale}</label>
+
           <input type="radio" name="gender" value="2" id="male" onChange={setMale} />
           <label htmlFor="male">{content.labelMale}</label>
 
-          <input type="radio" name="gender" value="1" id="female" onChange={setFemale} />
-          <label htmlFor="female">{content.labelFemale}</label>
         </fieldset>
 
         <div>
@@ -102,15 +116,15 @@ const Calculator: React.FunctionComponent<CalculatorProps> = (props) => {
           </p>
           <fieldset className={`radio-button-container ${styles.fieldset}`}>
             <legend>{content.labelGoal}:</legend>
-            <input type="radio" name="goal" value="1" id="healthyLiving" onChange={(e) => setGoal(e.target.value)} />
+            <input type="radio" name="goal" value="1" id="healthyLiving" checked={goal === '1' ? true : false} onChange={handleGoal} />
             <label htmlFor="healthyLiving">{content.goalHealth}</label>
 
-            <input type="radio" name="goal" value="2" id="weightLoss" onChange={(e) => setGoal(e.target.value)} />
+            <input type="radio" name="goal" value="2" id="weightLoss" checked={goal === '2' ? true : false} onChange={handleGoal} />
             <label htmlFor="weightLoss">{content.goalWeightLoss}</label>
           </fieldset>
 
           <label htmlFor="male" className={styles.label}>{content.firstName}</label>
-          <input autoComplete="given-name" className={styles.input} type="text" name="userName" id="userName" defaultValue={userName} onChange={(e) => setUserName(e.target.value)} />
+          <input autoComplete="given-name" className={styles.input} type="text" name="userName" id="userName" defaultValue={userName} onChange={handleName} />
         </div>
 
         <div className={styles.btnWrapper}>
