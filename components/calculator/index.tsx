@@ -45,11 +45,25 @@ const Calculator: React.FunctionComponent<CalculatorProps> = (props) => {
       const bmiResult = weightValue / (heightInMeters * heightInMeters);
       setBMI(bmiResult.toFixed(2));
 
-      if (bmiResult < 18.5) {
+      //male
+      let normalMin = 18.5
+      let normalMax = 24.9;
+      let overweightMin = 25;
+      let overweightMax = 29.9;
+
+      //female
+      if (gender === 1) {
+        normalMin = 17.5
+        normalMax = 23.9;
+        overweightMin = 24;
+        overweightMax = 28.9;
+      }
+
+      if (bmiResult < normalMin) {
         setBmiCategory(content.resultUnder);
-      } else if (bmiResult >= 18.5 && bmiResult <= 24.9) {
+      } else if (bmiResult >= normalMin && bmiResult <= normalMax) {
         setBmiCategory(content.resultNormal);
-      } else if (bmiResult >= 25 && bmiResult <= 29.9) {
+      } else if (bmiResult >= overweightMin && bmiResult <= overweightMax) {
         setBmiCategory(content.resultOver);
       } else {
         setBmiCategory(content.resultObese);
@@ -87,7 +101,7 @@ const Calculator: React.FunctionComponent<CalculatorProps> = (props) => {
         }
         <fieldset className={`radio-button-container ${styles.fieldset}`}>
           <legend>{content.genderInfo}</legend>
-          
+
           <input type="radio" name="gender" value="1" id="female" onChange={setFemale} />
           <label htmlFor="female">{content.labelFemale}</label>
 
@@ -116,7 +130,7 @@ const Calculator: React.FunctionComponent<CalculatorProps> = (props) => {
           </p>
           <fieldset className={`radio-button-container ${styles.fieldset}`}>
             <legend>{content.labelGoal}:</legend>
-            <input type="radio" name="goal" value="1" id="healthyLiving" checked={goal === '1' ? true : false} onChange={handleGoal} />
+            <input type="radio" name="goal" value="1" id="healthyLiving" checked={goal === '1' ? true : false} onChange={handleGoal} />
             <label htmlFor="healthyLiving">{content.goalHealth}</label>
 
             <input type="radio" name="goal" value="2" id="weightLoss" checked={goal === '2' ? true : false} onChange={handleGoal} />
