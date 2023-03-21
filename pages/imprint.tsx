@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import ImprintContent from '@/components/imprint'
 import styles from '@/styles/Home.module.css'
-import content from '../data.json';
-import { useState } from "react";
+import content from "../lang/en.json";
 
 export default function Imprint() {
   return (

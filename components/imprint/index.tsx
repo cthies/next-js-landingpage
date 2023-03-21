@@ -5,7 +5,7 @@ const Imprint = (content: any) => {
     return (
         <div className={styles.imprint}>
             <h1>{content.title}</h1>
-            <p>{content.description}</p>
+            <p dangerouslySetInnerHTML={ {__html: content.description} } ></p>
             <Link href="/">Back</Link>
         </div>
     )

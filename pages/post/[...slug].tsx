@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router'
 import Head from 'next/head'
-import content from '../../data.json';
-
+import content from "../../lang/en.json";
 
 import Article from '@/components/article'
 
