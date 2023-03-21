@@ -23,9 +23,9 @@
   --callout-hover-background: #796a3d;
   --card-rgb: 100, 100, 100;
   --card-border-rgb: 200, 200, 200;
-  --CalculatorImg: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzgxOTAwNDA&ixlib=rb-4.0.3&q=80');
-  --CalculatorImgMale: url('https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzgxOTI5Njk&ixlib=rb-4.0.3&q=80');
-  --CalculatorImgFemale: url('https://images.unsplash.com/photo-1593164842249-d74fc06dae05?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzgxOTI5Njk&ixlib=rb-4.0.3&q=80');
+  --CalculatorImg: url('/src/img/meal.jpg');
+  --CalculatorImgMale: url('/src/img/male.jpg');
+  --CalculatorImgFemale: url('/src/img/female.jpg');
 }
 
 * {

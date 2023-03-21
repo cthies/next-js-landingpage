@@ -5,7 +5,7 @@ const languageSwitcher = (props: any) => {
 
     const handleLang = (event: { target: { value: any; }; }) => {
         let name = event.target.value;
-        localStorage.setItem('nextjs-bmi', name);
+        localStorage.setItem('nextjs-bmi-lang', name);
         setContent(name);
     }
 

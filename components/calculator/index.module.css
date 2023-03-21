@@ -85,8 +85,8 @@
   .container::before {
     left: -1600px;
     right: -1600px;
-    background-position: center;
-    background-size: 100% auto;
+    background-size: auto 100%;
+    background-repeat: repeat;
   }
 
   .calculator {

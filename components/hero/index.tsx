@@ -20,8 +20,8 @@ type HeroProps = {
                     alt={slide.title}
                     width={500}
                     height={500}
-                    loading="lazy"
                     className={styles.logo}
+                    priority={true}
                 />
             <div className={styles.content}>
                 <span className={styles.badge}>

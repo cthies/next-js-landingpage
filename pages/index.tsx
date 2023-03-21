@@ -17,12 +17,14 @@ export default function Home() {
   const [goal, setGoal] = useState('1');
   const [content, setContent] = useState('en');
   let data = en;
+  const [loading, setLoading] = useState(true);
 
   /*get saved preferences*/
   useEffect(() => {
     setUserName(localStorage.getItem('nextjs-bmi-username') || '' );
     setGoal(localStorage.getItem('nextjs-bmi-goal') || goal );
     setContent(localStorage.getItem('nextjs-bmi-lang') == 'de' ? 'de' : 'en' );
+    setLoading(false);
   }, []);
 
   if (content === 'de') {
@@ -37,7 +39,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main className={`${loading ? styles.loading : ''} ${styles.main}`}>
         {data.content.map((slide: any, index: any) => {
 
           if (slide.type == 'hero') {
